@@ -1,0 +1,88 @@
+# ==============================
+# macOS
+# ==============================
+.DS_Store                    # macOS Finder metadata
+
+# ==============================
+# Terraform
+# ==============================
+.terraform/                  # Terraform plugin directory
+*.tfvars                     # Variable files with secrets
+*.tfstate*                   # Terraform state files
+*.lock.hcl                    # Terraform dependency lock files
+
+# ==============================
+# Logs
+# ==============================
+*.log                        # Any log files
+
+# ==============================
+# IDEs / Editors
+# ==============================
+.vscode/                     # VSCode settings
+.idea/                       # IntelliJ/IDEA settings
+
+# ==============================
+# Kubernetes
+# ==============================
+kubeconfig_*                 # Local kubeconfig files
+
+# ==============================
+# Node / frontend
+# ==============================
+node_modules/                # Node.js dependencies
+dist/                        # Build artifacts
+
+# ==============================
+# Python / virtual environments
+# ==============================
+.venv/                       # Python virtual environment
+
+# ==============================
+# Reports / artifacts
+# ==============================
+reports/                     # Custom reports
+oss-output/                  # Custom output directories
+screenshots/                 # Images/screenshots
+
+# ==============================
+# Terraform build
+# ==============================
+ort-build/                   # Local build output
+
+# ==============================
+# Helm charts
+# ==============================
+Chart.lock                    # Helm chart lock
+**/charts/*.tgz               # Packaged Helm charts
+
+# ==============================
+# Nx workspace (if using Nx monorepo)
+# ==============================
+.nx/cache/
+.nx/workspace-data/
+
+# ==============================
+# Devenv
+# ==============================
+.devenv*                     
+devenv.local.nix
+
+# ==============================
+# Direnv
+# ==============================
+.direnv
+
+# ==============================
+# Pre-commit configuration
+# ==============================
+.pre-commit-config.yaml
+
+# ==============================
+# Terraform EKS local state and keys (sensitive)
+# ==============================
+/terraform/eks/default/keys/*
+/terraform/eks/default/.terraform/
+/terraform/eks/default/.terraform.lock.hcl
+/terraform/eks/default/.terraform.tfstate
+/terraform/eks/default/.terraform.tfstate.backup
