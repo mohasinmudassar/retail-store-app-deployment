@@ -1,88 +1,41 @@
-# ==============================
-# macOS
-# ==============================
-.DS_Store                    # macOS Finder metadata
+.DS_Store
+*.tfvars
+.terraform/
+*.tfstate*
+*.lock.hcl
+*.log
+.vscode
+reports
+env
+oss-output
+kubeconfig_*
+.idea
+node_modules
+dist
+.venv
 
-# ==============================
-# Terraform
-# ==============================
-.terraform/                  # Terraform plugin directory
-*.tfvars                     # Variable files with secrets
-*.tfstate*                   # Terraform state files
-*.lock.hcl                    # Terraform dependency lock files
+ort-build
 
-# ==============================
-# Logs
-# ==============================
-*.log                        # Any log files
 
-# ==============================
-# IDEs / Editors
-# ==============================
-.vscode/                     # VSCode settings
-.idea/                       # IntelliJ/IDEA settings
+Chart.lock
+**/charts/*.tgz
 
-# ==============================
-# Kubernetes
-# ==============================
-kubeconfig_*                 # Local kubeconfig files
+.nx/cache
+.nx/workspace-data
 
-# ==============================
-# Node / frontend
-# ==============================
-node_modules/                # Node.js dependencies
-dist/                        # Build artifacts
-
-# ==============================
-# Python / virtual environments
-# ==============================
-.venv/                       # Python virtual environment
-
-# ==============================
-# Reports / artifacts
-# ==============================
-reports/                     # Custom reports
-oss-output/                  # Custom output directories
-screenshots/                 # Images/screenshots
-
-# ==============================
-# Terraform build
-# ==============================
-ort-build/                   # Local build output
-
-# ==============================
-# Helm charts
-# ==============================
-Chart.lock                    # Helm chart lock
-**/charts/*.tgz               # Packaged Helm charts
-
-# ==============================
-# Nx workspace (if using Nx monorepo)
-# ==============================
-.nx/cache/
-.nx/workspace-data/
-
-# ==============================
+screenshots
 # Devenv
-# ==============================
-.devenv*                     
+.devenv*
 devenv.local.nix
 
-# ==============================
-# Direnv
-# ==============================
+# direnv
 .direnv
 
-# ==============================
-# Pre-commit configuration
-# ==============================
 .pre-commit-config.yaml
-
-# ==============================
-# Terraform EKS local state and keys (sensitive)
-# ==============================
 /terraform/eks/default/keys/*
-/terraform/eks/default/.terraform/
+/terraform/eks/default/.terraform
 /terraform/eks/default/.terraform.lock.hcl
 /terraform/eks/default/.terraform.tfstate
 /terraform/eks/default/.terraform.tfstate.backup
+
+
